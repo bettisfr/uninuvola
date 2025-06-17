@@ -9,7 +9,7 @@ RUN apt update && apt -y install cmake build-essential
 # Copy Gurobi installation into the image
 COPY gurobi1200 /opt/gurobi1200
 
-# Copy Gurobi license
+# Copy Gurobi license folder
 COPY .gurobi /home/jovyan/.gurobi
 
 # Fix permissions so jovyan owns the license and Gurobi files
