@@ -14,7 +14,7 @@ COPY gurobilic /home/jovyan/.gurobi
 
 # Fix permissions so jovyan owns the license and Gurobi files
 RUN chown -R jovyan:jovyan /opt/gurobi1200 && \
-    chown jovyan:jovyan /home/jovyan/.gurobi.lic
+    chown -R jovyan:jovyan /home/jovyan/.gurobi
 
 # Set environment variables for Gurobi
 ENV GRB_LICENSE_FILE=/home/jovyan/.gurobi.lic \
