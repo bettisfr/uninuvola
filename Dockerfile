@@ -6,7 +6,7 @@ USER root
 ## -- ADD YOUR CODE HERE !! -- ##
 RUN apt update && apt -y install cmake build-essential
 
-COPY /opt/gurobi1200 /opt/gurobi1200
+COPY gurobi1200 /opt/gurobi1200
 
 ## --------------------------- ##
 
